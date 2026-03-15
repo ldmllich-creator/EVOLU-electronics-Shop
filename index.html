@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVOLU Electronics — Медицинские приборы для вашего здоровья</title>
+    <meta name="description"
+        content="EVOLU electronics — интернет-магазин медицинских изделий. Ингаляторы, тонометры, термометры, пульсоксиметры. Доставка по Латвии.">
+    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚕️</text></svg>">
+</head>
+
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="Images/LOGO.png" alt="EVOLU electronics" class="logo-img">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about" data-i18n="nav_about">О компании</a></li>
+                    <li><a href="#products" data-i18n="nav_products">Продукция</a></li>
+                    <li><a href="#care" data-i18n="nav_care">Уход</a></li>
+                    <li><a href="#repair" data-i18n="nav_repair">Сервис</a></li>
+                    <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                    <li><a href="#reviews" data-i18n="nav_reviews">Отзывы</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Контакты</a></li>
+                </ul>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="lv">LV</button>
+                </div>
+
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge" data-i18n="hero_badge">Сертифицированные медицинские изделия</div>
+                    <h1>
+                        <span data-i18n="hero_title1">Забота о здоровье</span><br>
+                        <span class="highlight" data-i18n="hero_title2">вашей семьи</span>
+                    </h1>
+                    <p class="hero-description" data-i18n="hero_desc">
+                        EVOLU electronics — точные, надёжные и простые в использовании медицинские приборы для
+                        ежедневного контроля здоровья. Ингаляторы, тонометры, термометры и пульсоксиметры.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary" data-i18n="hero_btn_catalog"><svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Каталог продукции</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact"><svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 18.5A2.5 2.5 0 0 1 14.5 16H20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.5A2.5 2.5 0 0 1 12 18.5z"/><path d="M12 18.5V22"/></svg> Связаться с нами</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-number">11+</div>
+                            <div class="hero-stat-label" data-i18n="stat_products">Продуктов</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-number">CE</div>
+                            <div class="hero-stat-label" data-i18n="stat_cert">Сертификация</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-number">2+</div>
+                            <div class="hero-stat-label" data-i18n="stat_warranty">Года гарантии</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-number">LV</div>
+                            <div class="hero-stat-label" data-i18n="stat_delivery">Доставка по Латвии</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-video-wrapper">
+                        <video class="hero-video" autoplay muted playsinline>
+                            <source src="Video/nano_air_pro.mp4" type="video/mp4">
+                        </video>
+                        <div class="hero-video-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge" data-i18n="about_badge">О нас</div>
+                <h2 class="section-title" data-i18n="about_title">Почему выбирают EVOLU?</h2>
+                <p class="section-subtitle" data-i18n="about_subtitle">
+                    Мы предлагаем сертифицированные медицинские приборы европейского качества для ежедневного
+                    мониторинга здоровья вашей семьи.
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="about-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+                    <h3 data-i18n="about_1_title">Точность измерений</h3>
+                    <p data-i18n="about_1_desc">Все наши приборы проходят строгий контроль качества и соответствуют
+                        европейским стандартам точности для медицинских изделий.</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
+                    <h3 data-i18n="about_2_title">CE сертификация</h3>
+                    <p data-i18n="about_2_desc">Продукция EVOLU сертифицирована в соответствии с европейскими
+                        директивами о медицинских изделиях и безопасна для использования.</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path d="M10 12h4M12 10v4" stroke="white" stroke-width="1.5" fill="none"/></svg></div>
+                    <h3 data-i18n="about_3_title">Для всей семьи</h3>
+                    <p data-i18n="about_3_desc">От детских ингаляторов в форме машинки до тонометров для пожилых — у нас
+                        есть решения для каждого члена семьи.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PRODUCTS ============ -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge" data-i18n="prod_badge">Каталог</div>
+                <h2 class="section-title" data-i18n="prod_title">Наша продукция</h2>
+                <p class="section-subtitle" data-i18n="prod_subtitle">
+                    Широкий ассортимент медицинских приборов для домашнего использования
+                </p>
+            </div>
+
+            <div class="products-tabs reveal">
+                <button class="tab-btn active" data-filter="all" data-i18n="tab_all">Все</button>
+                <button class="tab-btn" data-filter="nebulizer" data-i18n="tab_neb">Ингаляторы</button>
+                <button class="tab-btn" data-filter="tonometer" data-i18n="tab_bp">Тонометры</button>
+                <button class="tab-btn" data-filter="thermometer" data-i18n="tab_therm">Термометры</button>
+                <button class="tab-btn" data-filter="oximeter" data-i18n="tab_oxi">Пульсоксиметры</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+
+                <!-- NEBULIZERS -->
+                <div class="product-card reveal" data-category="nebulizer">
+                    <div class="product-image">
+                        <img src="Images/Super Car.png" alt="SUPER CAR" class="img-large">
+                        <div class="product-badge-sale">-36%</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_neb">Ингалятор</div>
+                        <h3 class="product-name">SUPER CAR</h3>
+                        <p class="product-desc" data-i18n="prod_supercar">Компрессорный ингалятор в форме гоночного
+                            автомобиля. Идеален для детей — превращает процедуру ингаляции в игру. Эффективное
+                            распыление лекарств для лечения астмы, бронхита и аллергии.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€49,95</span>
+                                <span class="price-old">€78,25</span>
+                            </div>
+                            <a href="https://evolu.lv/products/kompresora-inhalators-super-car" class="product-link"
+                                target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/Evolu-Super-Car-Nebulizer-JLN-S06A-Instruction-GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="nebulizer">
+                    <div class="product-image has-video">
+                        <img src="Images/NanoAir PRO2.png" alt="NANO AIR PRO" style="max-width:65%; max-height:160px;">
+                        <video class="product-video" muted loop playsinline preload="none"><source src="Video/nano_air_pro.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_neb">Ингалятор</div>
+                        <h3 class="product-name">NANO AIR PRO</h3>
+                        <p class="product-desc" data-i18n="prod_nanoairpro">Портативный Mesh-небулайзер с ультразвуковой
+                            технологией. Бесшумная работа, USB-зарядка, компактный дизайн для использования в дороге.
+                            Размер частиц менее 5 мкм.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€99,00</span>
+                                <span class="price-old">€124,55</span>
+                            </div>
+                            <a href="https://evolu.lv/products/portativais-mesh-nebulaizers-nano-air-pro"
+                                class="product-link" target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/EVOLU-Nano-AIR-PRO-nebulizer-Instruction-100x175-GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="nebulizer">
+                    <div class="product-image">
+                        <img src="Images/NanoAir MINI.png" alt="NANO AIR MINI">
+                        <div class="product-badge-sale">-40%</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_neb">Ингалятор</div>
+                        <h3 class="product-name">NANO AIR MINI</h3>
+                        <p class="product-desc" data-i18n="prod_nanoairmini">Ультракомпактный Mesh-небулайзер. Вес всего
+                            90 г — поместится в карман. Работает от встроенного аккумулятора, подходит для детей и
+                            взрослых.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€72,87</span>
+                                <span class="price-old">€121,45</span>
+                            </div>
+                            <a href="https://evolu.lv/products/portativais-mesh-nebulaizers-nano-air-mini"
+                                class="product-link" target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/EVOLU-Nano-AIR-MINI-Instruction-100x175-GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="nebulizer">
+                    <div class="product-image has-video">
+                        <img src="Images/NanoAir.png" alt="NANO AIR">
+                        <video class="product-video" muted loop playsinline preload="none"><source src="Video/nano_air.mp4" type="video/mp4"></video>
+                        <div class="product-badge-sale">-35%</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_neb">Ингалятор</div>
+                        <h3 class="product-name">NANO AIR</h3>
+                        <p class="product-desc" data-i18n="prod_nanoair">Портативный Mesh-небулайзер для ингаляций в
+                            любом месте. Тихая работа, удобное управление одной кнопкой, маски для детей и взрослых в
+                            комплекте.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€70,62</span>
+                                <span class="price-old">€108,65</span>
+                            </div>
+                            <a href="https://evolu.lv/products/portativais-mesh-nebulaizers-nano-air"
+                                class="product-link" target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/EVOLU-nano-Air-nebulizer-Instruction-100x175-GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="nebulizer">
+                    <div class="product-image no-bg">
+                        <img src="Images/Universal.png" alt="UNIVERSAL" class="img-large">
+                        <div class="product-badge-sale">-30%</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_neb">Ингалятор</div>
+                        <h3 class="product-name">UNIVERSAL</h3>
+                        <p class="product-desc" data-i18n="prod_universal">Компрессорный небулайзер для всей семьи.
+                            Надёжный мотор, регулируемая скорость распыления, полный набор масок и насадок в комплекте.
+                        </p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€43,44</span>
+                                <span class="price-old">€62,05</span>
+                            </div>
+                            <a href="https://evolu.lv/products/kompresora-inhalators-universal" class="product-link"
+                                target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/EVOLU-Universal-Compr-Neb-JLN-2300Air-Instruction-GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <!-- TONOMETERS -->
+                <div class="product-card reveal" data-category="tonometer">
+                    <div class="product-image has-video">
+                        <img src="Images/Intelligent White.jpg" alt="INTELLIGENT" style="max-width:65%; max-height:160px;">
+                        <video class="product-video" muted loop playsinline preload="none"><source src="Video/intelligent.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_bp">Тонометр</div>
+                        <h3 class="product-name">INTELLIGENT</h3>
+                        <p class="product-desc" data-i18n="prod_intelligent">Автоматический тонометр с большим четким
+                            дисплеем. Технология интеллектуального надувания, память на 2×60 измерений, индикатор
+                            аритмии и классификация давления по ВОЗ.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€64,85</span>
+                            </div>
+                            <a href="https://evolu.lv/products/asinsspiediena-meritajs-intelligent" class="product-link"
+                                target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/EVOLU%20Intelligent%20BPM%20PG-800B19L%20Instruction%2090x128_GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="tonometer">
+                    <div class="product-image has-video">
+                        <img src="Images/Intelligent Black.png" alt="INTELLIGENT BLACK" style="max-width:65%; max-height:160px;">
+                        <video class="product-video" muted loop playsinline preload="none"><source src="Video/intelligent_black.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_bp">Тонометр</div>
+                        <h3 class="product-name">INTELLIGENT BLACK</h3>
+                        <p class="product-desc" data-i18n="prod_intelligent_black">Автоматический тонометр в элегантном чёрном исполнении. Большой дисплей, технология интеллектуального надувания, память на 2×60 измерений, индикатор аритмии.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€64,85</span>
+                            </div>
+                            <a href="https://evolu.lv/products/asinsspiediena-meritajs-intelligent" class="product-link"
+                                target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/EVOLU%20Intelligent%20BPM%20PG-800B19L%20Instruction%2090x128_GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="tonometer">
+                    <div class="product-image has-video">
+                        <img src="Images/Automatic.png" alt="AUTOMATIC" style="max-width:65%; max-height:160px;">
+                        <video class="product-video" muted loop playsinline preload="none"><source src="Video/automatic_tonometer.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_bp">Тонометр</div>
+                        <h3 class="product-name">AUTOMATIC</h3>
+                        <p class="product-desc" data-i18n="prod_automatic">Компактный автоматический тонометр для
+                            ежедневного использования. Простое управление одной кнопкой, крупные цифры на дисплее,
+                            память измерений.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€36,45</span>
+                            </div>
+                            <a href="https://evolu.lv/products/asinsspiediena-meritajs-automatic" class="product-link"
+                                target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/Web%20EVOLU%20AUTOMATIC%20tonometer%20Instruction%20155x115%20GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <!-- THERMOMETERS -->
+                <div class="product-card reveal" data-category="thermometer">
+                    <div class="product-image has-video">
+                        <img src="Images/Non Contact.png" alt="NON CONTACT">
+                        <video class="product-video" muted loop playsinline preload="none"><source src="Video/non_contact.mp4" type="video/mp4"></video>
+                        <div class="product-badge-sale">-35%</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_therm">Термометр</div>
+                        <h3 class="product-name">NON CONTACT 3-в-1</h3>
+                        <p class="product-desc" data-i18n="prod_noncontact">Инфракрасный бесконтактный термометр.
+                            Измерение за 1 секунду без прикосновения. Три режима: тело, поверхность, комната. Идеален
+                            для грудных детей.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€37,95</span>
+                                <span class="price-old">€58,45</span>
+                            </div>
+                            <a href="https://evolu.lv/products/infrasarkanais-bezkontakta-termometrs-non-contact-tris-viena"
+                                class="product-link" target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/Evolu%20Non%20Contact%20Infrared%20Instruction%2085x175%20GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="thermometer">
+                    <div class="product-image">
+                        <img src="Images/Soft.png" alt="SOFT">
+                        <div class="product-badge-sale">-10%</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_therm">Термометр</div>
+                        <h3 class="product-name">SOFT</h3>
+                        <p class="product-desc" data-i18n="prod_soft">Цифровой термометр с гибким наконечником для
+                            комфортного измерения. Водонепроницаемый корпус, звуковой сигнал, запоминание последнего
+                            результата.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€5,99</span>
+                                <span class="price-old">€6,65</span>
+                            </div>
+                            <a href="https://evolu.lv/products/digitalais-termometrs-soft-ar-elastigu-uzgali"
+                                class="product-link" target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/Evolu%20SOFT%20Digital%20thermometer%20DMT-4318%20Instruction%20GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-category="thermometer">
+                    <div class="product-image">
+                        <img src="Images/Simple.png" alt="SIMPLE">
+                        <div class="product-badge-sale">-10%</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_therm">Термометр</div>
+                        <h3 class="product-name">SIMPLE</h3>
+                        <p class="product-desc" data-i18n="prod_simple">Базовый цифровой термометр — надёжный, точный,
+                            простой. Измерение за 60 секунд, звуковой сигнал, автоотключение. Идеальный выбор для
+                            домашней аптечки.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€4,91</span>
+                                <span class="price-old">€5,45</span>
+                            </div>
+                            <a href="https://evolu.lv/products/digitalais-termometrs-simple" class="product-link"
+                                target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/Evolu%20SIMPLE%20Digital%20thermometer%20DMT-4132%20Instruction%20GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+                <!-- OXIMETER -->
+                <div class="product-card reveal" data-category="oximeter">
+                    <div class="product-image has-video">
+                        <img src="Images/PulseOximeter.png" alt="Pulse Oximeter">
+                        <video class="product-video" muted loop playsinline preload="none"><source src="Video/pulse_oximeter.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category" data-i18n="cat_oxi">Пульсоксиметр</div>
+                        <h3 class="product-name" data-i18n="prod_oxi_name">Пульсоксиметр</h3>
+                        <p class="product-desc" data-i18n="prod_oximeter">Пальчиковый пульсоксиметр для измерения уровня
+                            кислорода в крови (SpO2) и пульса. OLED-дисплей, результат за 8 секунд, автоотключение,
+                            работает от батареек AAA.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">€47,85</span>
+                            </div>
+                            <a href="https://evolu.lv/products/pirksta-pulsa-oksimetrs" class="product-link"
+                                target="_blank" data-i18n="buy_link">Купить →</a>
+                        </div>
+                        <a href="manuals/Evolu%20Pulse%20Oximeter%20JPD-500G%20Instruction%20A4%20GB.pdf" class="product-manual" download><svg class="manual-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 18v-6M9 15l3 3 3-3" fill="none" stroke="white" stroke-width="1.5"/></svg> Инструкция</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CARE ============ -->
+    <section class="section care" id="care">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge" data-i18n="care_badge">Забота</div>
+                <h2 class="section-title" data-i18n="care_title">Уход и использование</h2>
+                <p class="section-subtitle" data-i18n="care_subtitle">
+                    Правильный уход за медицинскими приборами обеспечивает точность измерений и долгий срок службы
+                </p>
+            </div>
+            <div class="care-grid">
+                <div class="care-card reveal">
+                    <div class="care-icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/><circle cx="12" cy="16" r="2" fill="white"/><path d="M12 10v4" stroke="white" stroke-width="1.5" fill="none"/></svg></div>
+                    <div>
+                        <h3 data-i18n="care_1_title">Ингаляторы и небулайзеры</h3>
+                        <p data-i18n="care_1_desc">После каждого использования промывайте маску, мундштук и ёмкость для
+                            лекарства тёплой водой. Раз в неделю дезинфицируйте детали. Храните в сухом месте. Заменяйте
+                            фильтры каждые 3–6 месяцев.</p>
+                    </div>
+                </div>
+                <div class="care-card reveal">
+                    <div class="care-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/><path d="M8 12h8M12 8v8" stroke="white" stroke-width="1.5" fill="none"/></svg></div>
+                    <div>
+                        <h3 data-i18n="care_2_title">Тонометры</h3>
+                        <p data-i18n="care_2_desc">Измеряйте давление в спокойном состоянии, сидя, с опорой для спины.
+                            Манжета на уровне сердца. Не употребляйте кофе за 30 минут до измерения. Протирайте манжету
+                            мягкой тканью.</p>
+                    </div>
+                </div>
+                <div class="care-card reveal">
+                    <div class="care-icon"><svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/><circle cx="11.5" cy="18" r="1.5" fill="white"/></svg></div>
+                    <div>
+                        <h3 data-i18n="care_3_title">Термометры</h3>
+                        <p data-i18n="care_3_desc">Цифровые термометры протирайте спиртом после использования.
+                            Бесконтактный термометр: держите на расстоянии 3–5 см от лба. Храните в защитном чехле,
+                            избегайте ударов.</p>
+                    </div>
+                </div>
+                <div class="care-card reveal">
+                    <div class="care-icon"><svg viewBox="0 0 24 24"><path d="M17 6h-2V3c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v3H7c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/><path d="M13 14h-2v-2H9v-2h2V8h2v2h2v2h-2v2z" fill="white"/></svg></div>
+                    <div>
+                        <h3 data-i18n="care_4_title">Общие рекомендации</h3>
+                        <p data-i18n="care_4_desc">Храните приборы при температуре 10–40°C и влажности не более 85%.
+                            Вовремя заменяйте батарейки. Не роняйте приборы. Не разбирайте устройства самостоятельно.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ REPAIR ============ -->
+    <section class="section repair" id="repair">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge" data-i18n="repair_badge">Поддержка</div>
+                <h2 class="section-title" data-i18n="repair_title">Сервис и ремонт</h2>
+                <p class="section-subtitle" data-i18n="repair_subtitle">
+                    Мы обеспечиваем полную поддержку и гарантийное обслуживание всех продуктов EVOLU
+                </p>
+            </div>
+            <div class="repair-content reveal">
+                <div class="repair-steps">
+                    <div class="repair-step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h4 data-i18n="repair_s1_title">Свяжитесь с нами</h4>
+                            <p data-i18n="repair_s1_desc">Опишите проблему по телефону +371 20387070 или по email
+                                info@evolu.lv. Мы поможем определить, нужен ли ремонт.</p>
+                        </div>
+                    </div>
+                    <div class="repair-step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h4 data-i18n="repair_s2_title">Отправьте прибор</h4>
+                            <p data-i18n="repair_s2_desc">Упакуйте устройство и отправьте в наш сервисный центр.
+                                Приложите описание неисправности и чек покупки.</p>
+                        </div>
+                    </div>
+                    <div class="repair-step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h4 data-i18n="repair_s3_title">Диагностика и ремонт</h4>
+                            <p data-i18n="repair_s3_desc">Наши специалисты проведут диагностику и устранят
+                                неисправность. Гарантийный ремонт — бесплатно.</p>
+                        </div>
+                    </div>
+                    <div class="repair-step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h4 data-i18n="repair_s4_title">Возврат отремонтированного прибора</h4>
+                            <p data-i18n="repair_s4_desc">Мы отправим отремонтированный прибор обратно вам с актом
+                                выполненных работ.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="repair-info">
+                    <div class="repair-icon-big"><svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/><circle cx="6.5" cy="6.5" r="1.5" fill="white"/></svg></div>
+                    <h3 data-i18n="repair_info_title">Запасные части</h3>
+                    <p data-i18n="repair_info_desc">В нашем магазине вы можете приобрести оригинальные запасные части:
+                        маски, трубки, фильтры, мундштуки и манжеты для тонометров.</p>
+                    <a href="https://evolu.lv/collections/rezerves-dalas" class="btn btn-primary" target="_blank"
+                        data-i18n="repair_btn"><svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Запасные части</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">FAQ</div>
+                <h2 class="section-title" data-i18n="faq_title">Частые вопросы</h2>
+                <p class="section-subtitle" data-i18n="faq_subtitle">Ответы на популярные вопросы о нашей продукции</p>
+            </div>
+            <div class="faq-list">
+
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q1">Какой ингалятор подходит для ребёнка?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_a1">Для детей мы рекомендуем компрессорный
+                            ингалятор SUPER CAR — его яркий дизайн в форме машинки превращает процедуру в игру. Для
+                            поездок подойдёт компактный NANO AIR MINI. Все модели комплектуются детскими масками.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q2">Как часто нужно калибровать тонометр?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_a2">Рекомендуется проверять точность тонометра раз
+                            в 2 года. При бережном использовании и хранении калибровка сохраняется длительное время.
+                            Если показания кажутся неточными — свяжитесь с нами.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q3">Бесконтактный термометр — насколько он точный?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_a3">Инфракрасный термометр NON CONTACT имеет
+                            погрешность ±0,2°C, что соответствует медицинским стандартам. Для максимальной точности:
+                            направляйте на чистый сухой лоб на расстоянии 3–5 см, в помещении без сквозняков.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q4">Есть ли гарантия на продукцию?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_a4">Да, на все приборы EVOLU предоставляется
+                            гарантия от 2 лет. В течение гарантийного срока мы бесплатно устраним неисправности,
+                            возникшие по вине производителя. Сохраняйте чек о покупке.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q5">Как оформить доставку по Латвии?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_a5">Доставка в пакоматы по Латвии бесплатна при
+                            заказе от €25. Оформите заказ на evolu.lv, выберите ближайший пакомат и получите посылку в
+                            течение 2–3 рабочих дней.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q6">Что такое пульсоксиметр и зачем он нужен?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_a6">Пульсоксиметр измеряет уровень кислорода в
+                            крови (SpO2) и частоту пульса. Нормальный уровень SpO2 — 95–100%. Прибор полезен при
+                            респираторных заболеваниях, спорте, горных путешествиях и для пожилых людей.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge" data-i18n="reviews_badge">Отзывы</div>
+                <h2 class="section-title" data-i18n="reviews_title">Что говорят наши клиенты</h2>
+                <p class="section-subtitle" data-i18n="reviews_subtitle">Реальные отзывы покупателей о продукции EVOLU electronics</p>
+            </div>
+
+            <div class="reviews-summary reveal">
+                <div class="reviews-rating-big">
+                    <span class="reviews-number">4.8</span>
+                    <div class="reviews-stars-big">
+                        <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star half">★</span>
+                    </div>
+                    <span class="reviews-count" data-i18n="reviews_count">На основе отзывов в Google</span>
+                </div>
+                <div class="reviews-google-badge">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                    <span>Google Reviews</span>
+                </div>
+            </div>
+
+            <div class="reviews-carousel reveal">
+                <div class="reviews-track" id="reviewsTrack">
+
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review_1_text">Купили ингалятор SUPER CAR для сына — он в восторге! Процедура ингаляции теперь проходит без слёз. Качество отличное, манжеты и маски в комплекте.</p>
+                        <div class="review-author">
+                            <div class="review-avatar">АК</div>
+                            <div>
+                                <div class="review-name">Анна К.</div>
+                                <div class="review-date">2 <span data-i18n="review_months_ago">месяца назад</span></div>
+                            </div>
+                            <svg class="review-google-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review_2_text">NANO AIR PRO — лучший портативный небулайзер, который я пробовал. Бесшумный, компактный, заряжается по USB. Беру с собой в поездки. Рекомендую!</p>
+                        <div class="review-author">
+                            <div class="review-avatar">МТ</div>
+                            <div>
+                                <div class="review-name">Māris T.</div>
+                                <div class="review-date">1 <span data-i18n="review_month_ago">месяц назад</span></div>
+                            </div>
+                            <svg class="review-google-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review_3_text">Тонометр INTELLIGENT удобный и точный. Большой дисплей — мама легко видит показания. Память на 120 измерений очень полезна для отслеживания динамики.</p>
+                        <div class="review-author">
+                            <div class="review-avatar">ЕС</div>
+                            <div>
+                                <div class="review-name">Елена С.</div>
+                                <div class="review-date">3 <span data-i18n="review_weeks_ago">недели назад</span></div>
+                            </div>
+                            <svg class="review-google-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review_4_text">Бесконтактный термометр NON CONTACT — незаменим с маленьким ребёнком. Измеряет за секунду, не нужно будить малыша. Точность отличная, проверяли у врача.</p>
+                        <div class="review-author">
+                            <div class="review-avatar">ИВ</div>
+                            <div>
+                                <div class="review-name">Ирина В.</div>
+                                <div class="review-date">1 <span data-i18n="review_month_ago">месяц назад</span></div>
+                            </div>
+                            <svg class="review-google-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">★★★★<span class="star-empty">★</span></div>
+                        <p class="review-text" data-i18n="review_5_text">Заказали NANO AIR MINI — размер впечатляет, реально помещается в карман. Работает тихо, ребёнок не пугается. Доставка в пакомат за 2 дня, бесплатно.</p>
+                        <div class="review-author">
+                            <div class="review-avatar">ДЛ</div>
+                            <div>
+                                <div class="review-name">Dmitrijs L.</div>
+                                <div class="review-date">2 <span data-i18n="review_months_ago">месяца назад</span></div>
+                            </div>
+                            <svg class="review-google-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review_6_text">Пульсоксиметр EVOLU — отличное качество за разумную цену. OLED дисплей яркий, показания стабильные. Купила для мамы после COVID, очень полезная вещь.</p>
+                        <div class="review-author">
+                            <div class="review-avatar">ОН</div>
+                            <div>
+                                <div class="review-name">Ольга Н.</div>
+                                <div class="review-date">3 <span data-i18n="review_months_ago">месяца назад</span></div>
+                            </div>
+                            <svg class="review-google-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="reviews-actions reveal" style="display: flex; justify-content: center; gap: 16px; margin-top: 48px; flex-wrap: wrap; position: relative; z-index: 10;">
+                <a href="https://www.google.com/maps/place/EVOLU+Medic%C4%ABnas+pre%C4%8Du+interneta+veikals/@56.8801288,24.5440468,17z/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" style="z-index: 10; position: relative; pointer-events: auto;">
+                    <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <span data-i18n="reviews_btn">Оставить отзыв в Google</span>
+                </a>
+                <a href="https://www.google.com/maps/place/EVOLU+Medic%C4%ABnas+pre%C4%8Du+interneta+veikals/@56.8801288,24.5440468,17z/" class="btn btn-outline" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" style="z-index: 10; position: relative; pointer-events: auto;">
+                    <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span data-i18n="reviews_all_btn">Все отзывы в Google</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge" data-i18n="contact_badge">Контакты</div>
+                <h2 class="section-title" data-i18n="contact_title">Свяжитесь с нами</h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">Мы рады помочь вам с выбором продукции или
+                    ответить на вопросы</p>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="contact-info-cards">
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+                        <div>
+                            <h4 data-i18n="contact_phone_label">Телефон</h4>
+                            <p><a href="tel:+37120387070">+371 20387070</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@evolu.lv">info@evolu.lv</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+                        <div>
+                            <h4 data-i18n="contact_shop_label">Интернет-магазин</h4>
+                            <p><a href="https://evolu.lv" target="_blank">evolu.lv</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M18 18.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm1.5-9H17V12h4.46L19.5 9.5zM6 18.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zM20 8l3 4v5h-2c0 1.66-1.34 3-3 3s-3-1.34-3-3H9c0 1.66-1.34 3-3 3s-3-1.34-3-3H1V6c0-1.11.89-2 2-2h14v4h3z"/></svg></div>
+                        <div>
+                            <h4 data-i18n="contact_delivery_label">Доставка</h4>
+                            <p data-i18n="contact_delivery_text">Бесплатно в пакоматы от €25</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label" for="name" data-i18n="form_name">Ваше имя</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email" data-i18n="form_email">Ваш email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message" data-i18n="form_message">Сообщение</label>
+                        <textarea id="message" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit" data-i18n="form_submit"><svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg> Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="Images/LOGO.png" alt="EVOLU electronics" class="logo-img footer-logo-img">
+                    </a>
+                    <p data-i18n="footer_desc">Медицинские приборы для ежедневного мониторинга здоровья вашей семьи.
+                        Точность, надёжность, простота.</p>
+                </div>
+                <div>
+                    <h4 data-i18n="footer_products">Продукция</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://evolu.lv/collections/inhalatori-nebulaizeri" target="_blank"
+                                data-i18n="tab_neb">Ингаляторы</a></li>
+                        <li><a href="https://evolu.lv/collections/asinsspiediena-meritaji" target="_blank"
+                                data-i18n="tab_bp">Тонометры</a></li>
+                        <li><a href="https://evolu.lv/collections/termometri" target="_blank"
+                                data-i18n="tab_therm">Термометры</a></li>
+                        <li><a href="https://evolu.lv/collections/pulsa-oksimetri" target="_blank"
+                                data-i18n="tab_oxi">Пульсоксиметры</a></li>
+                        <li><a href="https://evolu.lv/collections/rezerves-dalas" target="_blank"
+                                data-i18n="footer_spare">Запчасти</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 data-i18n="footer_info">Информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://evolu.lv/policies/shipping-policy" target="_blank"
+                                data-i18n="footer_shipping">Доставка</a></li>
+                        <li><a href="https://evolu.lv/policies/refund-policy" target="_blank"
+                                data-i18n="footer_returns">Возврат</a></li>
+                        <li><a href="https://evolu.lv/policies/terms-of-service" target="_blank"
+                                data-i18n="footer_terms">Условия</a></li>
+                        <li><a href="https://evolu.lv/policies/privacy-policy" target="_blank"
+                                data-i18n="footer_privacy">Конфиденциальность</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 data-i18n="nav_contact">Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+37120387070"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> +371 20387070</a></li>
+                        <li><a href="mailto:info@evolu.lv"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> info@evolu.lv</a></li>
+                        <li><a href="https://evolu.lv" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> evolu.lv</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024–2026 EVOLU electronics. <span data-i18n="footer_rights">Все права защищены.</span></p>
+                <p>Made in Latvia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=13"></script>
+    <script src="voice-widget.js?v=13"></script>
+</body>
+
+</html>
